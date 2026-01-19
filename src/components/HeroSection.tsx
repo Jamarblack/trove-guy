@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import mascotSign from "@/assets/mascot-sign.png";
+import ParticleField from "./ParticleField";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
+      {/* Particle effects */}
+      <ParticleField />
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-midnight via-background to-background" />
       
