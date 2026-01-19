@@ -31,7 +31,6 @@ const phases = [
       "Major exchange listings",
       "Trove Guy ecosystem",
       "Global domination",
-      "Lambo time 🚗"
     ],
     status: "upcoming"
   }

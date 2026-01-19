@@ -5,19 +5,19 @@ const tokenomicsData = [
   {
     title: "Total Supply",
     value: "1B",
-    icon: "💰",
+  
     description: "One billion tokens, one community"
   },
   {
     title: "Tax",
     value: "0/0",
-    icon: "🚫",
+    
     description: "Zero buy tax, zero sell tax"
   },
   {
     title: "Liquidity",
     value: "BURNT",
-    icon: "🔥",
+   
     description: "Liquidity burnt forever"
   }
 ];
@@ -59,7 +59,6 @@ const TokenomicsSection = () => {
                 whileHover={{ x: 10 }}
               >
                 <div className="flex items-center gap-6">
-                  <div className="text-4xl md:text-5xl">{item.icon}</div>
                   <div className="flex-1">
                     <p className="text-muted-foreground text-sm uppercase tracking-wider mb-1">
                       {item.title}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import mascotChill from "@/assets/mascot-chill.png";
+import mascotChill from "/mascot-chill.png";
 
 const socialLinks = [
   { name: "Twitter / X", icon: "𝕏", href: "#" },

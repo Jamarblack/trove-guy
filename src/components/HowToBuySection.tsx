@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Check, Copy, Wallet, ArrowRightLeft, Coins } from "lucide-react";
 
-const CONTRACT_ADDRESS = "TROVE...REPLACE_WITH_REAL_CA";
+const CONTRACT_ADDRESS = "8RYRucwwCsrX7VaeXLTR8FoHUi9P26Ywu4j22G5zq1aR";
 
 const steps = [
   {

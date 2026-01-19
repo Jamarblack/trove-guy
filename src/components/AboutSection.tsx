@@ -1,9 +1,37 @@
 import { motion } from "framer-motion";
 import mascotBoxing from "@/assets/mascot-boxing.png";
 
+const loreEvents = [
+  {
+    title: "The Chain Migration",
+    desc: "Started on HyperVM. Realized speed matters. Migrated to Solana to chase the pump.",
+    
+  },
+  {
+    title: "The $500k Fumble",
+    desc: "We had a massive Hype position. We sold it. It went to $500k. Pain.",
+  
+  },
+  {
+    title: "The Polymarket Rekt",
+    desc: "Use the treasury for a 'sure thing' prediction? Bad idea. We learned the hard way.",
+    
+  },
+  {
+    title: "The Casino Incident",
+    desc: "A certain KOL sent the tokens to a casino wallet instead of the marketing wallet. You can't make this up.",
+  
+  },
+  {
+    title: "The Time Rugs",
+    desc: "Launch is in 5 mins... wait, 10 mins... wait, tomorrow. (Launch is actually live now).",
+  
+  }
+];
+
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
+    <section id="about" className="py-24 relative overflow-hidden bg-black/20">
       <div className="container px-4">
         <motion.div 
           className="text-center mb-16"
@@ -13,76 +41,59 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
-            <span className="text-gradient-metallic">Who is</span>{" "}
-            <span className="text-gradient-neon glow-neon-text">Trove Guy?</span>
+            <span className="text-gradient-metallic">The</span>{" "}
+            <span className="text-gradient-neon glow-neon-text">Lore</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Born from the blockchain, ready to fight the jeets.
+            A history of bad decisions, leading to one massive comeback.
           </p>
         </motion.div>
 
-        <motion.div 
-          className="relative max-w-5xl mx-auto"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          {/* Fight poster style card */}
-          <div className="card-degen p-0 overflow-hidden">
-            {/* Header */}
-            <div className="bg-gradient-to-r from-primary/20 via-primary/30 to-primary/20 py-4 px-6 text-center border-b border-primary/30">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary uppercase tracking-widest">
-                🥊 Tale of the Tape 🥊
-              </h3>
-            </div>
-
-            <div className="p-6 md:p-10">
-              <div className="relative">
-                <motion.img 
+        <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            
+          {/* Left: The Visual */}
+          <motion.div 
+            className="relative"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="card-degen p-2 rotate-2 hover:rotate-0 transition-transform duration-300">
+               <div className="bg-primary/20 text-center py-2 font-bold text-primary uppercase tracking-widest mb-2 rounded">
+                  Fighting The FUD 
+               </div>
+               <img 
                   src={mascotBoxing}
-                  alt="Trove Guy vs The Jeets"
-                  className="w-full rounded-lg"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
+                  alt="Trove Guy Fighting"
+                  className="w-full rounded-lg border border-primary/20"
                 />
-                
-                {/* Overlay stats */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-6">
-                  <div className="flex justify-between items-end">
-                    <div className="text-center">
-                      <p className="text-primary font-bold text-2xl md:text-4xl">TROVE GUY</p>
-                      <p className="text-muted-foreground text-sm">The Challenger</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-4xl md:text-6xl font-bold text-foreground">VS</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-destructive font-bold text-2xl md:text-4xl">THE JEETS</p>
-                      <p className="text-muted-foreground text-sm">Paper Hands</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
+          </motion.div>
 
-            {/* Stats bar */}
-            <div className="grid grid-cols-3 border-t border-border">
-              <div className="p-4 text-center border-r border-border">
-                <p className="text-primary font-bold text-xl md:text-2xl">💎</p>
-                <p className="text-sm text-muted-foreground">Diamond Hands</p>
-              </div>
-              <div className="p-4 text-center border-r border-border">
-                <p className="text-primary font-bold text-xl md:text-2xl">0%</p>
-                <p className="text-sm text-muted-foreground">Jeet Rate</p>
-              </div>
-              <div className="p-4 text-center">
-                <p className="text-primary font-bold text-xl md:text-2xl">∞</p>
-                <p className="text-sm text-muted-foreground">Vibe Level</p>
-              </div>
-            </div>
+          {/* Right: The Wall of Shame / Timeline */}
+          <div className="space-y-6">
+            {loreEvents.map((event, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="flex gap-4 p-4 rounded-xl border border-white/5 bg-white/5 hover:bg-white/10 hover:border-primary/50 transition-colors"
+              >
+               
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-1">{event.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {event.desc}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
-        </motion.div>
+
+        </div>
       </div>
     </section>
   );

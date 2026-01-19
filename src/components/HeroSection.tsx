@@ -28,19 +28,25 @@ const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="inline-block mb-4 px-4 py-1 rounded-full bg-primary/10 border border-primary/50 text-primary font-mono text-sm"
+            >
+            </motion.div>
+
             <motion.h1 
               className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="text-gradient-metallic">The Star</span>
+              <span className="text-gradient-metallic">The Ultimate</span>
               <br />
-              <span className="text-foreground">of the</span>
+              <span className="text-gradient-neon glow-neon-text">Redemption</span>
               <br />
-              <span className="text-gradient-neon glow-neon-text">Bull Run</span>
-              <br />
-              <span className="text-foreground">is Here.</span>
+              <span className="text-foreground">Arc.</span>
             </motion.h1>
 
             <motion.p 
@@ -49,7 +55,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              No taxes, liquidity burnt, <span className="text-primary">pure vibe.</span>
+              We survived the <span className="text-destructive">Casino</span>. We survived the <span className="text-destructive">Time Rugs</span>. We are still here.
             </motion.p>
 
             <motion.div 
@@ -58,17 +64,11 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <a 
-                href="#" 
-                className="btn-primary-degen text-center"
-              >
-                🚀 Buy on Raydium
+              <a href="#" className="btn-primary-degen text-center">
+                Buy on Raydium
               </a>
-              <a 
-                href="#" 
-                className="btn-secondary-degen text-center"
-              >
-                💬 Join Telegram
+              <a href="#" className="btn-secondary-degen text-center">
+                See the Chart
               </a>
             </motion.div>
           </motion.div>
@@ -92,7 +92,6 @@ const HeroSection = () => {
                   ease: "easeInOut" 
                 }}
               />
-              {/* Glow effect behind mascot */}
               <div className="absolute inset-0 -z-10 blur-3xl opacity-30 bg-primary rounded-full scale-75" />
             </div>
           </motion.div>
@@ -105,7 +104,7 @@ const HeroSection = () => {
           <div className="marquee-content">
             {Array(10).fill(null).map((_, i) => (
               <span key={i} className="inline-block mx-8 text-primary-foreground font-bold text-lg uppercase tracking-widest">
-                $TROVE IS LIVE 🌟 • $TROVE IS LIVE 🚀 • $TROVE IS LIVE ⭐ • 
+                NO MORE TIME RUGS 🕒 • CASINO PROO• HYPERVM SURVIVOR • 
               </span>
             ))}
           </div>

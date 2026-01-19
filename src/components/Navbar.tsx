@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import mascotChill from "@/assets/mascot-chill.png";
+import mascotChill from "/mascot-chill.png";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -20,7 +20,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <img src={mascotChill} alt="Trove Guy" className="w-10 h-10 object-contain" />
-            <span className="text-xl font-bold text-gradient-neon">$TROVE</span>
+            <span className="text-xl font-bold text-gradient-neon">$TROVEGUY</span>
           </a>
 
           {/* Desktop Nav */}
