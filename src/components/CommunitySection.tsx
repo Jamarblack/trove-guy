@@ -44,7 +44,7 @@ const CommunitySection = () => {
             <span className="text-gradient-neon glow-neon-text">Army</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            The STARBOY community is growing every day
+            The Trove Guy community is growing every day
           </p>
         </motion.div>
 

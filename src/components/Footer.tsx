@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Logo/Mascot */}
           <motion.img 
             src={mascotChill}
-            alt="STARBOY"
+            alt="Trove Guy"
             className="w-24 h-auto"
             whileHover={{ rotate: [0, -5, 5, 0] }}
             transition={{ duration: 0.5 }}
@@ -29,7 +29,7 @@ const Footer = () => {
 
           {/* Brand */}
           <h3 className="text-3xl font-bold">
-            <span className="text-gradient-neon">$STARBOY</span>
+            <span className="text-gradient-neon">$TROVE</span>
           </h3>
 
           {/* Social Links */}
@@ -55,7 +55,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2024 STARBOY. All rights reserved.
+            © 2024 Trove Guy. All rights reserved.
           </p>
         </motion.div>
       </div>

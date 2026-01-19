@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Check, Copy, Wallet, ArrowRightLeft, Coins } from "lucide-react";
 
-const CONTRACT_ADDRESS = "STARBOY...REPLACE_WITH_REAL_CA";
+const CONTRACT_ADDRESS = "TROVE...REPLACE_WITH_REAL_CA";
 
 const steps = [
   {
@@ -19,8 +19,8 @@ const steps = [
   },
   {
     step: 3,
-    title: "Swap for $STARBOY",
-    description: "Connect wallet to Raydium and swap SOL for $STARBOY",
+    title: "Swap for $TROVE",
+    description: "Connect wallet to Raydium and swap SOL for $TROVE",
     icon: ArrowRightLeft
   }
 ];
@@ -49,7 +49,7 @@ const HowToBuySection = () => {
             <span className="text-gradient-neon glow-neon-text">Buy</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Three easy steps to join the STARBOY army
+            Three easy steps to join the Trove Guy army
           </p>
         </motion.div>
 

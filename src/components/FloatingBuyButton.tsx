@@ -28,7 +28,7 @@ const FloatingBuyButton = () => {
           whileTap={{ scale: 0.95 }}
         >
           <Rocket className="w-5 h-5" />
-          <span className="hidden sm:inline">Buy $STARBOY</span>
+          <span className="hidden sm:inline">Buy $TROVE</span>
           <span className="sm:hidden">Buy</span>
         </motion.a>
       )}
