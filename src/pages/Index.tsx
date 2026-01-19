@@ -3,8 +3,10 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import TokenomicsSection from "@/components/TokenomicsSection";
 import HowToBuySection from "@/components/HowToBuySection";
+import CommunitySection from "@/components/CommunitySection";
 import RoadmapSection from "@/components/RoadmapSection";
 import Footer from "@/components/Footer";
+import FloatingBuyButton from "@/components/FloatingBuyButton";
 
 const Index = () => {
   return (
@@ -15,9 +17,11 @@ const Index = () => {
         <AboutSection />
         <TokenomicsSection />
         <HowToBuySection />
+        <CommunitySection />
         <RoadmapSection />
       </main>
       <Footer />
+      <FloatingBuyButton />
     </div>
   );
 };
