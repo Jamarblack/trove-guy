@@ -83,7 +83,7 @@ const HeroSection = () => {
             <div className="relative">
               <motion.img 
                 src={mascotSign}
-                alt="STARBOY Token Mascot"
+                alt="Trove Guy Token Mascot"
                 className="w-full max-w-md lg:max-w-lg drop-shadow-2xl"
                 animate={{ y: [0, -15, 0] }}
                 transition={{ 
@@ -105,7 +105,7 @@ const HeroSection = () => {
           <div className="marquee-content">
             {Array(10).fill(null).map((_, i) => (
               <span key={i} className="inline-block mx-8 text-primary-foreground font-bold text-lg uppercase tracking-widest">
-                $STARBOY IS LIVE 🌟 • $STARBOY IS LIVE 🚀 • $STARBOY IS LIVE ⭐ • 
+                $TROVE IS LIVE 🌟 • $TROVE IS LIVE 🚀 • $TROVE IS LIVE ⭐ • 
               </span>
             ))}
           </div>

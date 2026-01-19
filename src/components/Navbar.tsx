@@ -19,8 +19,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <img src={mascotChill} alt="STARBOY" className="w-10 h-10 object-contain" />
-            <span className="text-xl font-bold text-gradient-neon">$STARBOY</span>
+            <img src={mascotChill} alt="Trove Guy" className="w-10 h-10 object-contain" />
+            <span className="text-xl font-bold text-gradient-neon">$TROVE</span>
           </a>
 
           {/* Desktop Nav */}

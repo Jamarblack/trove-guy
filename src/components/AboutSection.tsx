@@ -14,7 +14,7 @@ const AboutSection = () => {
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
             <span className="text-gradient-metallic">Who is</span>{" "}
-            <span className="text-gradient-neon glow-neon-text">STARBOY?</span>
+            <span className="text-gradient-neon glow-neon-text">Trove Guy?</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Born from the blockchain, ready to fight the jeets.
@@ -41,7 +41,7 @@ const AboutSection = () => {
               <div className="relative">
                 <motion.img 
                   src={mascotBoxing}
-                  alt="STARBOY vs The Jeets"
+                  alt="Trove Guy vs The Jeets"
                   className="w-full rounded-lg"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
@@ -51,7 +51,7 @@ const AboutSection = () => {
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/90 to-transparent p-6">
                   <div className="flex justify-between items-end">
                     <div className="text-center">
-                      <p className="text-primary font-bold text-2xl md:text-4xl">STARBOY</p>
+                      <p className="text-primary font-bold text-2xl md:text-4xl">TROVE GUY</p>
                       <p className="text-muted-foreground text-sm">The Challenger</p>
                     </div>
                     <div className="text-center">

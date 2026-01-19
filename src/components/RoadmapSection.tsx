@@ -29,7 +29,7 @@ const phases = [
     title: "The Moon",
     items: [
       "Major exchange listings",
-      "STARBOY ecosystem",
+      "Trove Guy ecosystem",
       "Global domination",
       "Lambo time 🚗"
     ],
@@ -126,7 +126,7 @@ const RoadmapSection = () => {
         >
           <motion.img 
             src={mascotBull}
-            alt="STARBOY Riding the Bull"
+            alt="Trove Guy Riding the Bull"
             className="w-full max-w-lg drop-shadow-2xl rounded-2xl"
             animate={{ y: [0, -10, 0] }}
             transition={{ 

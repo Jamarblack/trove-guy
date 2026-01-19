@@ -87,9 +87,9 @@ const TokenomicsSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <motion.img 
+          <motion.img 
               src={mascotFist}
-              alt="STARBOY Ready"
+              alt="Trove Guy Ready"
               className="w-full max-w-sm drop-shadow-2xl"
               animate={{ y: [0, -10, 0] }}
               transition={{ 
