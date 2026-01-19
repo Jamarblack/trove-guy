@@ -18,7 +18,7 @@ const Index = () => {
         <TokenomicsSection />
         <HowToBuySection />
         <CommunitySection />
-        <RoadmapSection />
+        {/* <RoadmapSection /> */}
       </main>
       <Footer />
       <FloatingBuyButton />

@@ -5,24 +5,7 @@ import { Check, Copy, Wallet, ArrowRightLeft, Coins } from "lucide-react";
 const CONTRACT_ADDRESS = "8RYRucwwCsrX7VaeXLTR8FoHUi9P26Ywu4j22G5zq1aR";
 
 const steps = [
-  {
-    step: 1,
-    title: "Create Wallet",
-    description: "Download Phantom or Solflare wallet and set it up",
-    icon: Wallet
-  },
-  {
-    step: 2,
-    title: "Get SOL",
-    description: "Buy SOL on an exchange and send it to your wallet",
-    icon: Coins
-  },
-  {
-    step: 3,
-    title: "Swap for $TROVE",
-    description: "Connect wallet to Raydium and swap SOL for $TROVE",
-    icon: ArrowRightLeft
-  }
+
 ];
 
 const HowToBuySection = () => {

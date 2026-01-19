@@ -48,7 +48,7 @@ const CommunitySection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
@@ -73,7 +73,7 @@ const CommunitySection = () => {
               </motion.div>
             );
           })}
-        </div>
+        </div> */}
 
         {/* Social CTA */}
         <motion.div 
@@ -94,7 +94,7 @@ const CommunitySection = () => {
             href="#" 
             className="btn-secondary-degen py-3 px-6 text-sm flex items-center gap-2"
           >
-            💬 Join Telegram
+             Join Telegram
           </a>
         </motion.div>
       </div>

@@ -104,7 +104,7 @@ const HeroSection = () => {
           <div className="marquee-content">
             {Array(10).fill(null).map((_, i) => (
               <span key={i} className="inline-block mx-8 text-primary-foreground font-bold text-lg uppercase tracking-widest">
-                NO MORE TIME RUGS 🕒 • CASINO PROO• HYPERVM SURVIVOR • 
+                $TROVEGUY
               </span>
             ))}
           </div>
